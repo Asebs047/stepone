@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="5538.0" prefWidth="1646.0" styleClass="mainFxmlClass" stylesheets="@/org/stepone/sources/catalogoview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.CatalogoController">
+<AnchorPane id="AnchorPane" prefHeight="2610.0" prefWidth="1740.0" styleClass="mainFxmlClass" stylesheets="@/org/stepone/sources/catalogoview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.CatalogoController">
    <children>
       <ImageView fitHeight="1190.0" fitWidth="1740.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -20,11 +20,11 @@
             <Rectangle2D />
          </viewport>
       </ImageView>
-      <ScrollPane layoutY="-2.0" prefHeight="2546.0" prefWidth="1740.0" style="-fx-background-color: rgba(255,255,255,0.05);" stylesheets="@../sources/catalogoview.css">
+      <ScrollPane layoutY="-2.0" prefHeight="1092.0" prefWidth="1740.0" style="-fx-background-color: rgba(255,255,255,0.05);" stylesheets="@../sources/catalogoview.css">
          <content>
             <TilePane alignment="CENTER" prefHeight="2125.0" prefWidth="1743.0">
                <children>
-                  <Button fx:id="btn001" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="341.0" textAlignment="CENTER">
+                  <Button fx:id="btn001" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="341.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="377.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -33,7 +33,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn002" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="331.0" textAlignment="CENTER">
+                  <Button fx:id="btn002" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="331.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="371.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -42,7 +42,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn003" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="340.0" textAlignment="CENTER">
+                  <Button fx:id="btn003" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="340.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="371.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -51,7 +51,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn004" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="335.0" textAlignment="CENTER">
+                  <Button fx:id="btn004" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="335.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="371.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -60,7 +60,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn005" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="340.0" textAlignment="CENTER">
+                  <Button fx:id="btn005" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="340.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="371.0" fitWidth="278.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -69,7 +69,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn006" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="320.0" textAlignment="CENTER">
+                  <Button fx:id="btn006" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="320.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="372.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -78,7 +78,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn007" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="320.0" textAlignment="CENTER">
+                  <Button fx:id="btn007" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="320.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="372.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -87,7 +87,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn008" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="320.0" textAlignment="CENTER">
+                  <Button fx:id="btn008" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="320.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="375.0" fitWidth="324.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -96,7 +96,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn009" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="337.0" textAlignment="CENTER">
+                  <Button fx:id="btn009" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="337.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="377.0" fitWidth="309.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -105,7 +105,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn010" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="340.0" textAlignment="CENTER">
+                  <Button fx:id="btn010" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="340.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="277.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -114,7 +114,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn011" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="344.0" textAlignment="CENTER">
+                  <Button fx:id="btn011" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="344.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="369.0" fitWidth="316.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -123,7 +123,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn012" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="333.0" textAlignment="CENTER">
+                  <Button fx:id="btn012" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="333.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="369.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -132,7 +132,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn013" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" textAlignment="CENTER">
+                  <Button fx:id="btn013" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="370.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -141,7 +141,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn014" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" textAlignment="CENTER">
+                  <Button fx:id="btn014" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="371.0" fitWidth="281.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -150,7 +150,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn015" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" textAlignment="CENTER">
+                  <Button fx:id="btn015" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="370.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -159,7 +159,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn016" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" textAlignment="CENTER">
+                  <Button fx:id="btn016" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="374.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -168,7 +168,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn017" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="338.0" textAlignment="CENTER">
+                  <Button fx:id="btn017" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="338.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="371.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -177,7 +177,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn018" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" textAlignment="CENTER">
+                  <Button fx:id="btn018" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="372.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -186,7 +186,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn019" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" textAlignment="CENTER">
+                  <Button fx:id="btn019" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="373.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -195,7 +195,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn020" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="341.0" textAlignment="CENTER">
+                  <Button fx:id="btn020" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="341.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="373.0" fitWidth="289.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -204,7 +204,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn021" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" textAlignment="CENTER">
+                  <Button fx:id="btn021" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="369.0" fitWidth="316.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -213,7 +213,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn022" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="337.0" textAlignment="CENTER">
+                  <Button fx:id="btn022" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="337.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="369.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -222,7 +222,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn023" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="345.0" textAlignment="CENTER">
+                  <Button fx:id="btn023" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="345.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="370.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -231,7 +231,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn024" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" textAlignment="CENTER">
+                  <Button fx:id="btn024" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="371.0" fitWidth="281.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -240,7 +240,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn026" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" textAlignment="CENTER">
+                  <Button fx:id="btn026" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="374.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -249,7 +249,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn027" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="341.0" textAlignment="CENTER">
+                  <Button fx:id="btn027" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="341.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="371.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -258,7 +258,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn028" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" textAlignment="CENTER">
+                  <Button fx:id="btn028" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="343.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="372.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -267,7 +267,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn029" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" textAlignment="CENTER">
+                  <Button fx:id="btn029" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="339.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="373.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -276,7 +276,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn030" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="342.0" textAlignment="CENTER">
+                  <Button fx:id="btn030" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="298.0" prefWidth="342.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="373.0" fitWidth="289.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -285,7 +285,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn025" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="301.0" prefWidth="342.0" textAlignment="CENTER">
+                  <Button fx:id="btn025" contentDisplay="TOP" mnemonicParsing="false" onAction="#verPokemon" prefHeight="301.0" prefWidth="342.0" styleClass="boton-transparente" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="370.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -303,72 +303,147 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="362.0" layoutY="366.0" prefHeight="113.0" prefWidth="329.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="362.0" layoutY="366.0" prefHeight="113.0" prefWidth="329.0" text="Zapatos deportivos Quixstep para hombre Q425" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="702.0" layoutY="366.0" prefHeight="94.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="702.0" layoutY="366.0" prefHeight="94.0" prefWidth="342.0" text="Zapatos casuales Stitch tipo Oxford para hombre Q415" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="1050.0" layoutY="376.0" prefHeight="82.0" prefWidth="335.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="1050.0" layoutY="376.0" prefHeight="82.0" prefWidth="335.0" text="Zapatos deportivos Trekker para hombre Q330" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="1046.0" layoutY="666.0" prefHeight="94.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="1046.0" layoutY="666.0" prefHeight="94.0" prefWidth="342.0" text="Zapatos deportivos Ambrose para hombre Q460" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="1391.0" layoutY="386.0" prefHeight="82.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="1391.0" layoutY="386.0" prefHeight="82.0" prefWidth="342.0" text="Zapatos deportivos Concur XP para hombre Q425" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="1392.0" layoutY="676.0" prefHeight="82.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="1392.0" layoutY="676.0" prefHeight="82.0" prefWidth="342.0" text="Zapatos deportivos Command para mujer 370" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="11.0" layoutY="676.0" prefHeight="82.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="11.0" layoutY="676.0" prefHeight="82.0" prefWidth="342.0" text="Zapatos deportivos Command para hombre Q370" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="363.0" layoutY="686.0" prefHeight="73.0" prefWidth="329.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="363.0" layoutY="686.0" prefHeight="73.0" prefWidth="329.0" text="Zapatos de vestir Taunton para hombre Q415" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="700.0" layoutY="686.0" prefHeight="73.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="700.0" layoutY="686.0" prefHeight="73.0" prefWidth="342.0" text="Sandalias DiamondBlack para hombre Q325" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="977.0" prefHeight="82.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="14.0" layoutY="977.0" prefHeight="82.0" prefWidth="342.0" text="Zapatos deportivos Crossspeed para hombre Q495" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="361.0" layoutY="987.0" prefHeight="73.0" prefWidth="335.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="361.0" layoutY="987.0" prefHeight="73.0" prefWidth="335.0" text="Zapatos casuales tipo mocasín para hombre Q415" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="702.0" layoutY="987.0" prefHeight="73.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="702.0" layoutY="987.0" prefHeight="73.0" prefWidth="342.0" text="Zapatos deportivos para mujer Q440" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="1045.0" layoutY="986.0" prefHeight="73.0" prefWidth="342.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="1045.0" layoutY="986.0" prefHeight="73.0" prefWidth="342.0" text="Sandalias para hombre Q235" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="1397.0" layoutY="975.0" prefHeight="82.0" prefWidth="335.0" text="Zapatos deportivos Courtside para hombre Q340" textAlignment="CENTER" wrapText="true">
+      <Label layoutX="1397.0" layoutY="975.0" prefHeight="82.0" prefWidth="335.0" text="Tenis Dazzle Sport para mujer Q199" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="1266.0" prefHeight="94.0" prefWidth="342.0" text="Zapatos deportivos Command para mujer Q370" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="1288.0" prefHeight="82.0" prefWidth="335.0" text="Sandalias Ryan con plataforma tipo cuña para mujer Q280" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="702.0" layoutY="1278.0" prefHeight="82.0" prefWidth="342.0" text="Sandalias Herdon para mujer Q130" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1052.0" layoutY="1281.0" prefHeight="82.0" prefWidth="335.0" text="Sandalias Felicia con tacón tipo cuña para mujer Q220" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1390.0" layoutY="1291.0" prefHeight="73.0" prefWidth="342.0" text="Botines Dierks con cordones para mujer Q200" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="1567.0" prefHeight="94.0" prefWidth="329.0" text="Zapatos deportivos Rush para mujer Q230" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="1869.0" prefHeight="94.0" prefWidth="342.0" text="Sandalias Riley con taco tipo cuña para mujer Q325" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="703.0" layoutY="1568.0" prefHeight="94.0" prefWidth="342.0" text="Zapatos deportivos Stance para mujer Q300" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1052.0" layoutY="1590.0" prefHeight="73.0" prefWidth="335.0" text="Botines Prance para mujer Q300" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1392.0" layoutY="1587.0" prefHeight="73.0" prefWidth="342.0" text="Sandalias planas Zeal para mujer Q325" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="1879.0" prefHeight="94.0" prefWidth="342.0" text="Sandalias Riley con taco tipo cuña para mujer Q325" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1048.0" layoutY="1879.0" prefHeight="94.0" prefWidth="342.0" text="Zapatos casuales Naples tipo Oxford para hombre Q675" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="701.0" layoutY="1889.0" prefHeight="94.0" prefWidth="342.0" text="Sandalias Abe para hombre Q310" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1392.0" layoutY="1889.0" prefHeight="94.0" prefWidth="342.0" text="Zapatos casuales Rudy tipo mocasín para mujer Q300" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="1577.0" prefHeight="94.0" prefWidth="335.0" text="Botines Rylan para mujer Q250" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>

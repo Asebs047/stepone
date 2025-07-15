@@ -17,12 +17,12 @@
             <Image url="@../image/lOGO.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="432.0" fitWidth="834.0" layoutX="-8.0" layoutY="-151.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="437.0" fitWidth="646.0" layoutX="-21.0" layoutY="-154.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/MEnu.png" />
+            <Image url="@../image/MenuAdmin.png" />
          </image>
       </ImageView>
-      <Button layoutX="258.0" layoutY="39.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="217.0" styleClass="boton-transparente" />
-      <Button layoutX="483.0" layoutY="39.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="128.0" styleClass="boton-transparente" />
+      <Button layoutX="465.0" layoutY="35.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="112.0" styleClass="boton-transparente" />
+      <Button layoutX="248.0" layoutY="35.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="186.0" styleClass="boton-transparente" />
    </children>
 </AnchorPane>
