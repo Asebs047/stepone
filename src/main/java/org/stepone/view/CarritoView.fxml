@@ -5,32 +5,43 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="613.0" style="-fx-background-color: 2883c9;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.stepone.controller.CarritoController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="613.0" style="-fx-background-color: 2883c9;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.CarritoController">
     <stylesheets>
         <URL value="@/org/stepone/sources/carritoview.css" />
     </stylesheets>
    <children>
-      <Label layoutX="8.0" text="Carrito">
-         <font>
-            <Font size="60.0" />
-         </font>
-      </Label>
-      <Spinner layoutX="360.0" layoutY="106.0" prefHeight="49.0" prefWidth="99.0" />
-      <TextField layoutX="476.0" layoutY="111.0" prefHeight="39.0" prefWidth="110.0" />
-      <Button layoutX="104.0" layoutY="260.0" mnemonicParsing="false" text="FINALIZAR COMPRA" textFill="#2883c9">
+      <ImageView fitHeight="568.0" fitWidth="892.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fondo.jpg" />
+         </image>
+      </ImageView>
+      <Spinner layoutX="410.0" layoutY="194.0" prefHeight="49.0" prefWidth="99.0" />
+      <TextField layoutX="657.0" layoutY="199.0" prefHeight="39.0" prefWidth="110.0" />
+      <Button layoutX="213.0" layoutY="376.0" mnemonicParsing="false" style="-fx-background-color: orange;" text="FINALIZAR COMPRA">
          <font>
             <Font size="38.0" />
          </font>
       </Button>
-      <Label layoutX="17.0" layoutY="172.0" prefHeight="88.0" prefWidth="163.0" text="Total:">
+      <Label layoutX="50.0" layoutY="273.0" prefHeight="88.0" prefWidth="163.0" text="Total:" textFill="WHITE">
          <font>
             <Font size="60.0" />
          </font>
       </Label>
-      <TextField layoutX="476.0" layoutY="200.0" prefHeight="39.0" prefWidth="110.0" />
-      <TextField layoutX="14.0" layoutY="101.0" prefHeight="58.0" prefWidth="329.0" />
+      <TextField layoutX="657.0" layoutY="298.0" prefHeight="39.0" prefWidth="110.0" />
+      <TextField layoutX="49.0" layoutY="189.0" prefHeight="58.0" prefWidth="329.0" />
+      <Button layoutX="657.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/añadircarrito.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

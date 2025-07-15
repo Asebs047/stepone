@@ -27,15 +27,15 @@
       </ImageView>
       <ImageView fitHeight="319.0" fitWidth="408.0" layoutX="116.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/01.png" />
+            <Image url="@../image/22.png" />
          </image>
       </ImageView>
-      <Label layoutX="534.0" layoutY="80.0" prefHeight="139.0" prefWidth="381.0" text="Zapatos deportivos Courtside para hombre" textFill="#211bbf" wrapText="true">
+      <Label layoutX="534.0" layoutY="80.0" prefHeight="139.0" prefWidth="381.0" text="Botines Rylan para mujer" textFill="#211bbf" wrapText="true">
          <font>
             <Font name="Comic Sans MS" size="35.0" />
          </font>
       </Label>
-      <TextField editable="false" layoutX="540.0" layoutY="203.0" prefHeight="55.0" prefWidth="106.0" text="Q340">
+      <TextField editable="false" layoutX="540.0" layoutY="203.0" prefHeight="55.0" prefWidth="106.0" text="Q250">
          <font>
             <Font size="30.0" />
          </font>
@@ -95,7 +95,7 @@
          </font>
       </Button>
       <ColorPicker layoutX="696.0" layoutY="219.0" prefHeight="34.0" prefWidth="155.0" />
-      <Button layoutX="23.0" layoutY="23.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="93.0" style="-fx-background-color: black;" styleClass="boton-transparente" stylesheets="@../sources/Productosview.css" text="Regresar" textFill="#f20707">
+      <Button layoutX="23.0" layoutY="26.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="93.0" style="-fx-background-color: black;" styleClass="boton-transparente" stylesheets="@../sources/Productosview.css" text="Regresar" textFill="#f20707">
          <font>
             <Font size="48.0" />
          </font>
