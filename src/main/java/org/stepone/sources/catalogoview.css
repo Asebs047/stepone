@@ -16,3 +16,19 @@
 .scroll-pane .scroll-bar:horizontal {
     -fx-opacity: 1; 
 }
+
+.boton-transparente {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white; /* o el color que desees para el texto */
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.boton-transparente:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1); /* efecto hover sutil */
+}
+
+.boton-transparente:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* cuando se presiona */
+}
