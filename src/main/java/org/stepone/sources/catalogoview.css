@@ -1,7 +1,18 @@
-/*
- * Empty Stylesheet file.
- */
+.scroll-pane {
+    -fx-background-color: transparent;  
+    -fx-border-color: transparent;      
+    -fx-padding: 0;                     
+}
 
-.mainFxmlClass {
+.scroll-pane .viewport {
+    -fx-background-color: transparent;  
+}
 
+.scroll-pane .scroll-bar {
+    -fx-background-color: transparent;  
+}
+
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 1; 
 }
