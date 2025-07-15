@@ -12,8 +12,7 @@ create table Zapatos(
     talla decimal(10,2) not null,
     color varchar(32) not null,
     precio decimal(10,2) not null,
-    genero enum('Hombre', 'Mujer', 'Niño', 'Niña', 'Unisex') not null,
-    imagen_url varchar(255) not null,
+    genero enum('Hombre', 'Mujer') not null,
     constraint pk_zapatos primary key(idZapato)
 );
 
@@ -69,6 +68,102 @@ create table DetallesCarritos(
 		references Zapatos(idZapato)
 );
 
+INSERT INTO Zapatos (nombre, descripcion, marca, talla, color, precio, genero) VALUES
+('Zapato Modelo 1', 'Zapatos deportivos Courtside para hombre', 'Nike', 38.5, 'Negro', 340.00, 'Hombre',
+('Zapato Modelo 2', 'Zapatos deportivos Quixstep para hombre', 'Adidas', 40.0, 'Blanco', 425.00, 'Hombre', 
+('Zapato Modelo 3', 'Zapatos casuales Stitch tipo Oxford para hombre', 'Puma', 36.5, 'Rojo', 415.00, 'Hombre', 
+('Zapato Modelo 4', 'Zapatos deportivos Trekker para hombre', 'Reebok', 37.0, 'Azul', 330.00, 'Hombre', 
+('Zapato Modelo 5', 'Zapatos deportivos Concur XP para hombre', 'Vans', 39.0, 'Gris', 425.00, 'Hombre', 
+('Zapato Modelo 6', 'Zapatos deportivos Command para hombre', 'Nike', 41.0, 'Verde', 370.00, 'Hombre', 
+('Zapato Modelo 7', 'Zapatos de vestir Taunton para hombre', 'Adidas', 40.5, 'Negro', 415.00, 'Hombre', 
+('Zapato Modelo 8', 'Sandalias DiamondBlack para hombre', 'Puma', 38.0, 'Blanco', 325.00, 'Hombre', 
+('Zapato Modelo 9', 'Zapatos deportivos Ambrose para hombre', 'Reebok', 36.0, 'Rojo', 460.00, 'Niña', 
+('Zapato Modelo 10', 'Zapatos deportivos Command para mujer', 'Vans', 42.0, 'Azul', 370.00, 'Mujer', 
+('Zapato Modelo 11', 'Zapatos deportivos Crossspeed para hombre', 'Nike', 37.5, 'Gris', 495.00, 'Hombre', 
+('Zapato Modelo 12', 'Zapatos casuales tipo mocasín para hombre', 'Adidas', 39.5, 'Verde', 415.00, 'Hombre',
+('Zapato Modelo 13', 'Zapatos deportivos para mujer', 'Puma', 38.5, 'Negro', 440.00, 'Mujer', 
+('Zapato Modelo 14', 'Sandalias para hombre', 'Reebok', 40.0, 'Blanco', 235.50, 'Hombre', 
+('Zapato Modelo 15', 'Tenis Dazzle Sport para mujer', 'Vans', 36.0, 'Rojo', 200.00, 'Mujer', 
+('Zapato Modelo 16', 'Zapatos deportivos Command para mujer', 'Nike', 41.5, 'Azul', 370.00, 'Mujer', 
+('Zapato Modelo 17', 'Sandalias Ryan con plataforma tipo cuña para mujer', 'Adidas', 37.0, 'Gris', 280.00, 'Mujer', 
+('Zapato Modelo 18', 'Sandalias Herdon para mujer', 'Puma', 42.0, 'Verde', 130.00, 'Mujer', 
+('Zapato Modelo 19', 'Sandalias Felicia con tacón tipo cuña para mujer', 'Reebok', 39.0, 'Negro', 220.00, 'Mujer', 
+('Zapato Modelo 20', 'Botines Dierks con cordones para mujer', 'Vans', 38.0, 'Blanco', 200.00, 'Mujer', 
+('Zapato Modelo 21', 'Zapatos deportivos Rush para mujer', 'Nike', 36.5, 'Rojo', 230.00, 'Mujer', 
+('Zapato Modelo 22', 'Botines Rylan para mujer', 'Adidas', 40.0, 'Azul', 250.00, 'Mujer', 
+('Zapato Modelo 23', 'Zapatos deportivos Stance para mujer', 'Puma', 37.5, 'Gris', 300.00, 'Mujer', 
+('Zapato Modelo 24', 'Botines Prance para mujer', 'Reebok', 41.0, 'Verde', 300.00, 'Mujer',
+('Zapato Modelo 25', 'Zapatos casuales Rudy tipo mocasín para mujer', 'Vans', 39.5, 'Negro', 300.00, 'Mujer', 
+('Zapato Modelo 26', 'Sandalias planas Zeal para mujer', 'Nike', 38.0, 'Blanco', 325.00, 'Mujer', 
+('Zapato Modelo 27', 'Sandalias Riley con taco tipo cuña para mujer', 'Adidas', 40.5, 'Rojo', 325.00, 'Mujer', 
+('Zapato Modelo 28', 'Sandalias Riley con taco tipo cuña para mujer', 'Puma', 36.5, 'Azul', 325.00, 'Mujer',
+('Zapato Modelo 29', 'Sandalias Abe para hombre', 'Reebok', 42.0, 'Gris', 310.00, 'Mujer', 
+('Zapato Modelo 30', 'Zapatos casuales Naples tipo Oxford para hombre', 'Vans', 37.0, 'Verde', 675.00, 'Hombre', 
+
+INSERT INTO Inventario (idZapato, cantidadStok) VALUES
+(1, 20), 
+(2, 15), 
+(3, 30), 
+(4, 10), 
+(5, 25),
+(6, 8), 
+(7, 18), 
+(8, 12), 
+(9, 16), 
+(10, 5),
+(11, 22), 
+(12, 13), 
+(13, 7), 
+(14, 9), 
+(15, 14),
+(16, 6), 
+(17, 11), 
+(18, 17), 
+(19, 23), 
+(20, 4),
+(21, 21), 
+(22, 19), 
+(23, 3), 
+(24, 2), 
+(25, 26),
+(26, 29), 
+(27, 24), 
+(28, 1), 
+(29, 27), 
+(30, 20);
+
+INSERT INTO IngresoInventario (cantIngreso, fechaIngreso, idZapato) VALUES
+(10, '2024-01-01', 1), 
+(15, '2024-01-02', 2), 
+(8, '2024-01-03', 3),
+(12, '2024-01-04', 4), 
+(6, '2024-01-05', 5), 
+(20, '2024-01-06', 6),
+(7, '2024-01-07', 7), 
+(14, '2024-01-08', 8), 
+(9, '2024-01-09', 9),
+(13, '2024-01-10', 10), 
+(11, '2024-01-11', 11), 
+(18, '2024-01-12', 12),
+(5, '2024-01-13', 13), 
+(16, '2024-01-14', 14), 
+(4, '2024-01-15', 15),
+(10, '2024-01-16', 16), 
+(15, '2024-01-17', 17), 
+(8, '2024-01-18', 18),
+(12, '2024-01-19', 19), 
+(6, '2024-01-20', 20), 
+(20, '2024-01-21', 21),
+(7, '2024-01-22', 22), 
+(14, '2024-01-23', 23), 
+(9, '2024-01-24', 24),
+(13, '2024-01-25', 25), 
+(11, '2024-01-26', 26), 
+(18, '2024-01-27', 27),
+(5, '2024-01-28', 28), 
+(16, '2024-01-29', 29), 
+(4, '2024-01-30', 30);
+
 create table ConfrmarPedidos(
 	idCarrito int,
 	constraint pk_confirmar primary key(idCarrito),
@@ -109,11 +204,10 @@ create procedure sp_InsertarZapato(
     in p_talla decimal(10,2),
     in p_color varchar(32),
     in p_precio decimal(10,2),
-    in p_genero enum('Hombre', 'Mujer', 'Niño', 'Niña', 'Unisex'),
-    in p_imagen_url varchar(255))
+    in p_genero enum('Hombre', 'Mujer')
 begin
-    insert into Zapatos(nombre, descripcion, marca, talla, color, precio, genero, imagen_url)
-    values(p_nombre, p_descripcion, p_marca, p_talla, p_color, p_precio, p_genero, p_imagen_url);
+    insert into Zapatos(nombre, descripcion, marca, talla, color, precio, genero)
+    values(p_nombre, p_descripcion, p_marca, p_talla, p_color, p_precio, p_genero);
 end //
 delimiter ;
 
@@ -126,8 +220,7 @@ create procedure sp_ActualizarZapato(
     in p_talla decimal(10,2),
     in p_color varchar(32),
     in p_precio decimal(10,2),
-    in p_genero enum('Hombre', 'Mujer', 'Niño', 'Niña', 'Unisex'),
-    in p_imagen_url varchar(255))
+    in p_genero enum('Hombre', 'Mujer'))
 begin
     update Zapatos
     set nombre = p_nombre,
@@ -136,8 +229,7 @@ begin
         talla = p_talla,
         color = p_color,
         precio = p_precio,
-        genero = p_genero,
-        imagen_url = p_imagen_url
+        genero = p_genero
     where idZapato = p_id;
 end //
 delimiter ;
