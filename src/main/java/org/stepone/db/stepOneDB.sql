@@ -37,13 +37,9 @@ create table IngresoInventario(
 
 create table Usuarios(
 	idUsuario int not null auto_increment,
-    nombre varchar(32) not null,
-    apellido varchar(32) not null,
     correo varchar(64) not null,
     pass varchar(64) not null,
     tipo enum('admin','user'),
-    nunero int not null,
-    direccion text,
     constraint pk_usuario primary key(idUsuario)
 );
 

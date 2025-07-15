@@ -28,7 +28,7 @@ import javafx.fxml.FXML;
 /**
  * FXML Controller class
  *
- * @author Klopez
+ * @author breyes
  */
 public class IniciarSecionController implements Initializable {
     private Main principal;

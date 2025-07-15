@@ -8,13 +8,14 @@ import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.stepone.controller.CatalogoController;
+import org.stepone.controller.RegistrarseController;
+
 import org.stepone.controller.IniciarSecionController;
 import org.stepone.controller.MenuPrincipalController;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
+*/
 /**
  *
  * @author emili
@@ -39,8 +40,7 @@ public class Main extends Application {
     public Initializable cambiarEscena(String fxml, double ancho, double alto) throws Exception {
         Initializable interfazDeCambio = null;
         FXMLLoader cargadorFXML = new FXMLLoader();
-        InputStream archivoFXML = Main.class.getResourceAsStream(URL + fxml);
-        
+        InputStream archivoFXML = Main.class.getResourceAsStream(URL + fxml); 
         cargadorFXML.setBuilderFactory(new JavaFXBuilderFactory());
         cargadorFXML.setLocation(Main.class.getResource(URL + fxml));
         siguienteEscena = new Scene(cargadorFXML.load(archivoFXML), ancho, alto);
@@ -72,11 +72,22 @@ public class Main extends Application {
     
     public void getCatalogoView(){
         try {
-            CatalogoController controL = (CatalogoController) cambiarEscena("CatalogoView.fxml", 1740, 1280);
+            CatalogoController control = (CatalogoController) cambiarEscena("CatalogoView.fxml", 1740, 1280);
             control.setPrincipal(this);
         } catch (Exception e) {
             System.out.println("Error al ir a Catalogo: " + e.getMessage());
             e.printStackTrace();
+        }
+    }
+    
+    public void getNuevoUsuarioView(){
+        try {
+            RegistrarseController control =
+                    (RegistrarseController) cambiarEscena("RegistrarseView.fxml",520,400);
+            control.setPrincipal(this);
+        } catch (Exception ex) {
+            System.out.println("Error al ir a Inicio"+ex.getMessage());
+            ex.printStackTrace();
         }
     }
 }
