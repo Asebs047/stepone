@@ -1,5 +1,16 @@
 package org.stepone.system;
 
+import java.io.InputStream;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.fxml.JavaFXBuilderFactory;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import org.stepone.controller.CatalogoController;
+import org.stepone.controller.IniciarSecionController;
+import org.stepone.controller.MenuPrincipalController;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
@@ -8,9 +19,64 @@ package org.stepone.system;
  *
  * @author emili
  */
-public class Main {
-
+public class Main extends Application {
+    private Stage escenarioPrincipal;
+    private Scene siguienteEscena;
+    private static String URL = "/org/stepone/view/";
+    
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        launch(args);
+    }
+    
+    @Override
+    public void start(Stage stage) throws Exception{
+        this.escenarioPrincipal = stage;
+        getMenuPrincipal();
+        stage.setTitle("StepOne");
+        stage.show();
+    }
+    
+    public Initializable cambiarEscena(String fxml, double ancho, double alto) throws Exception {
+        Initializable interfazDeCambio = null;
+        FXMLLoader cargadorFXML = new FXMLLoader();
+        InputStream archivoFXML = Main.class.getResourceAsStream(URL + fxml);
+        
+        cargadorFXML.setBuilderFactory(new JavaFXBuilderFactory());
+        cargadorFXML.setLocation(Main.class.getResource(URL + fxml));
+        siguienteEscena = new Scene(cargadorFXML.load(archivoFXML), ancho, alto);
+        escenarioPrincipal.setScene(siguienteEscena);
+        escenarioPrincipal.sizeToScene();
+        interfazDeCambio = cargadorFXML.getController();
+        return interfazDeCambio;
+    }
+    
+    public void getMenuPrincipal(){
+        try {
+            MenuPrincipalController control =(MenuPrincipalController) cambiarEscena("MenuPrincipalView.fxml", 877, 584);
+            control.setPrincipal(this);
+        } catch (Exception e) {
+            System.out.println("Error al ir a Menu Principal: "+ e.getMessage());
+            e.printStackTrace();
+        }
+    }
+    
+    public void getLoginView(){
+        try {
+            IniciarSecionController control = (IniciarSecionController) cambiarEscena("IniciarSecionView.fxml", 520, 400);
+            control.setPrincipal(this);
+        } catch (Exception e) {
+            System.out.println("Error al ir a Login: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+    
+    public void getCatalogoView(){
+        try {
+            CatalogoController controL = (CatalogoController) cambiarEscena("CatalogoView.fxml", 1740, 1280);
+            control.setPrincipal(this);
+        } catch (Exception e) {
+            System.out.println("Error al ir a Catalogo: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }
