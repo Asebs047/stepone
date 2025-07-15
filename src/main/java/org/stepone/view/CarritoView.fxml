@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="613.0" style="-fx-background-color: 2883c9;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.stepone.controller.CarritoController">
+    <stylesheets>
+        <URL value="@/org/stepone/sources/carritoview.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="8.0" text="Carrito">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Spinner layoutX="360.0" layoutY="106.0" prefHeight="49.0" prefWidth="99.0" />
+      <TextField layoutX="476.0" layoutY="111.0" prefHeight="39.0" prefWidth="110.0" />
+      <Button layoutX="104.0" layoutY="260.0" mnemonicParsing="false" text="FINALIZAR COMPRA" textFill="#2883c9">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="172.0" prefHeight="88.0" prefWidth="163.0" text="Total:">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <TextField layoutX="476.0" layoutY="200.0" prefHeight="39.0" prefWidth="110.0" />
+      <TextField layoutX="14.0" layoutY="101.0" prefHeight="58.0" prefWidth="329.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../sources/menuprincipalview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="596.0" fitWidth="877.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fondo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="556.0" fitWidth="845.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/lOGO.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="437.0" fitWidth="646.0" layoutX="-21.0" layoutY="-154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/MenuAdmin.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="465.0" layoutY="35.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="112.0" styleClass="boton-transparente" />
+      <Button layoutX="248.0" layoutY="35.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="186.0" styleClass="boton-transparente" />
+   </children>
+</AnchorPane>
