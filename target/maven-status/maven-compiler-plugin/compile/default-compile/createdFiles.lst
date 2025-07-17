@@ -1,13 +1,10 @@
 org\stepone\system\Main.class
+org\stepone\controller\CarritoController.class
 org\stepone\controller\IniciarSecionController.class
+org\stepone\controller\RegistrarseController.class
+org\stepone\model\Usuario.class
 org\stepone\db\Conexion.class
+org\stepone\controller\InventarioController.class
 org\stepone\controller\CatalogoController.class
 org\stepone\controller\MenuPrincipalController.class
-org\stepone\controller\MenuAdministracionController.class
 org\stepone\controller\Productos.class
-org\stepone\controller\RegistrarseController.class
-org\stepone\controller\VentasController.class
-org\stepone\model\Inventario.class
-org\stepone\controller\CarritoController.class
-org\stepone\controller\InventarioController.class
-org\stepone\model\Usuario.class

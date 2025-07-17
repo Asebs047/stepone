@@ -6,10 +6,7 @@ package org.stepone.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import org.stepone.system.Main;
 
 /**
@@ -24,23 +21,9 @@ public class CatalogoController implements Initializable {
         this.principal=principal;
     }
     
-    @FXML
-    private Button btnRegresar;
-
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
-    @FXML
-    public void clickManejadorEventos(ActionEvent e){
-        if (e.getSource()== btnRegresar) {
-            principal.getMenuPrincipal();
-            
-        }
-    }
-    
-
     
 }
