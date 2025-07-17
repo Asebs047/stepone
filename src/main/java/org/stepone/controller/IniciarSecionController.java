@@ -67,7 +67,7 @@ public class IniciarSecionController implements Initializable {
     String usuario = TxtUsuario.getText();
     String contrasena = PassContraseña.getText();   
 
-    String verificarLogin = "select count(1) from Usuarios where nombre = ? and contrasena = ?";
+    String verificarLogin = "select count(1) from Usuarios where correo = ? and pass = ?";
 
     try {
         PreparedStatement enunciado = conexionDB.prepareStatement(verificarLogin);

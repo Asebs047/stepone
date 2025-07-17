@@ -34,13 +34,8 @@ create table IngresoInventario(
 
 create table Usuarios(
 	idUsuario int not null auto_increment,
-    nombre varchar(32) not null,
-    apellido varchar(32) not null,
     correo varchar(64) not null,
     pass varchar(64) not null,
-    tipo enum('admin','user') not null,
-    nunero int not null,
-    direccion text,
     constraint pk_usuario primary key(idUsuario)
 );
 
@@ -305,16 +300,11 @@ delimiter ;
 -- Usuarios
 delimiter //
 create procedure sp_InsertarUsuario(
-    in p_nombre varchar(32),
-    in p_apellido varchar(32),
     in p_correo varchar(64),
-    in p_pass varchar(64),
-    in p_tipo enum('admin','user'),
-    in p_nunero int,
-    in p_direccion text)
+    in p_pass varchar(64))
 begin
-    insert into Usuarios(nombre, apellido, correo, pass, tipo, nunero, direccion)
-    values(p_nombre, p_apellido, p_correo, p_pass, p_tipo, p_nunero, p_direccion);
+    insert into Usuarios(correo, pass)
+    values(p_correo, p_pass);
 end //
 delimiter ;
 
