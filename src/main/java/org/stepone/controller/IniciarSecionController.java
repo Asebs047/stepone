@@ -61,40 +61,50 @@ public class IniciarSecionController implements Initializable {
     }
     
     public void validarLogin(){
-        Conexion conexionLogin = new Conexion();
-        Connection conexionDB = conexionLogin.getConexion();
-        
-        String usuario = TxtUsuario.getText();
-        String contrasena = PassContraseña.getText();   
-    
-        String verificarLogin = "select count(1) from Usuarios where nombre = ? and contrasena = ?";
-        
+    Conexion conexionLogin = new Conexion();
+    Connection conexionDB = conexionLogin.getConexion();
+
+    String usuario = TxtUsuario.getText();
+    String contrasena = PassContraseña.getText();   
+
+    String verificarLogin = "select count(1) from Usuarios where correo = ? and pass = ?";
+
+    try {
+        PreparedStatement enunciado = conexionDB.prepareStatement(verificarLogin);
+        enunciado.setString(1, usuario);
+        enunciado.setString(2, contrasena);
+
+        ResultSet resultado = enunciado.executeQuery();
+
+        if (resultado.next() && resultado.getInt(1) == 1) {
+            LabMensaje.setText("Bienvenido!");
+
+            // Lógica para diferenciar correos
+            if (usuario.contains("@admin")) {
+                // Redirigir a vista de administrador
+                principal.getMenuAdminView(); // Asegúrate que este método exista
+            } else if (usuario.contains("@")) {
+                // Redirigir a vista de usuario normal
+                principal.getCatalogoView();// Asegúrate que este método exista
+            } else {
+                LabMensaje.setText("Correo inválido: debe contener '@'.");
+            }
+
+        } else {
+            LabMensaje.setText("Datos Inválidos, intente de nuevo.");
+        }            
+    } catch (Exception e) {
+        e.printStackTrace();
+        LabMensaje.setText("Error al conectar con la base de datos");
+    } finally {
         try {
-            PreparedStatement enunciado = conexionDB.prepareStatement(verificarLogin);
-            enunciado.setString(1, usuario);
-            enunciado.setString(2, contrasena);
-
-            ResultSet resultado = enunciado.executeQuery();
-
-            if (resultado.next()) {
-                if (resultado.getInt(1) == 1) {
-                    LabMensaje.setText("Bienvenido!");
-                    principal.getCatalogoView();
-                } else {
-                    LabMensaje.setText("Datos Invalidos, intente de nuevo.");
-                }
-            }            
+            if (conexionDB != null) conexionDB.close();
         } catch (Exception e) {
             e.printStackTrace();
-            LabMensaje.setText("Error al conectar con la base de datos");
-        } finally {
-            try {
-                if (conexionDB != null) conexionDB.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
     }
+}
+
     
     public void CrearUsuarioActionEvent(ActionEvent e){
         principal.getNuevoUsuarioView();

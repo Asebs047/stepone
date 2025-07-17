@@ -11,7 +11,10 @@ import org.stepone.controller.CatalogoController;
 import org.stepone.controller.RegistrarseController;
 
 import org.stepone.controller.IniciarSecionController;
+import org.stepone.controller.InventarioController;
+import org.stepone.controller.MenuAdministracionController;
 import org.stepone.controller.MenuPrincipalController;
+import org.stepone.controller.VentasController;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -87,10 +90,11 @@ public class Main extends Application {
                     (RegistrarseController) cambiarEscena("RegistrarseView.fxml",520,400);
             control.setPrincipal(this);
         } catch (Exception ex) {
-            System.out.println("Error al ir a Inicio"+ex.getMessage());
+            System.out.println("Error al ir a Inicio: "+ex.getMessage());
             ex.printStackTrace();
         }
     }
+    
 //    --------------------------------------------------------------------------
     public void getP01View(){
         try {
@@ -98,6 +102,13 @@ public class Main extends Application {
             control.setPrincipal(this);
         } catch (Exception e) {
             System.out.println("Error al ir a P01: " + e.getMessage());
+    
+    public void getMenuAdminView(){
+        try {
+            MenuAdministracionController control =(MenuAdministracionController) cambiarEscena("MenuAdminView.fxml", 870, 500);
+            control.setPrincipal(this);
+        } catch (Exception e) {
+            System.out.println("Error al ir a el menu de administrador: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -108,10 +119,17 @@ public class Main extends Application {
             control.setPrincipal(this);
         } catch (Exception e) {
             System.out.println("Error al ir a P02: " + e.getMessage());
+
+    public void getInventarioView(){
+        try {
+            InventarioController control = (InventarioController) cambiarEscena("InventarioView.fxml", 1003, 675);
+            control.setPrincipal(this);
+        } catch (Exception e) {
+            System.out.println("Error al ir a inventario: " + e.getMessage());
             e.printStackTrace();
         }
     }
-    
+
     public void getP03View(){
         try {
             CatalogoController control = (CatalogoController) cambiarEscena("P03.fxml", 920, 619);
@@ -392,5 +410,15 @@ public class Main extends Application {
         }
     }
     
-    
+    public void getVentasView(){
+        try {
+            VentasController control =
+                    (VentasController) cambiarEscena("VentasView.fxml", 1168, 675);
+            control.setPrincipal(this);
+        } catch (Exception e) {
+            System.out.println("Error a ir a ventas: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
 }

@@ -24,6 +24,7 @@ public class CatalogoController implements Initializable {
         this.principal=principal;
     }
     
+<<<<<<< HEAD
     @FXML private Button btnP01, btnP02, btnP03, btnP04, btnP05;
     @FXML private Button btnP06, btnP07, btnP08, btnP09, btnP10;
     @FXML private Button btnP11, btnP12, btnP13, btnP14, btnP15;
@@ -34,12 +35,18 @@ public class CatalogoController implements Initializable {
     
     @FXML
     private Button btnCatalogo;
+=======
+    @FXML
+    private Button btnRegresar;
+
+>>>>>>> 40cb720848c5eabc70d128cc5a8140ab5bd87c94
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {    
     }    
     
     @FXML
+<<<<<<< HEAD
     public void clickManejadorEventos(ActionEvent evento){
         if (evento.getSource()== btnCatalogo){
             principal.getCatalogoView();
@@ -108,3 +115,12 @@ public class CatalogoController implements Initializable {
         }
     }
 }
+
+    public void clickManejadorEventos(ActionEvent e){
+        if (e.getSource()== btnRegresar) {
+            principal.getMenuPrincipal();
+            
+        }
+    }
+}
+
