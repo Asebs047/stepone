@@ -23,6 +23,6 @@
          </image>
       </ImageView>
       <Button layoutX="258.0" layoutY="39.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="217.0" styleClass="boton-transparente" />
-      <Button layoutX="483.0" layoutY="39.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="128.0" styleClass="boton-transparente" />
+      <Button fx:id="btnCatalogo" layoutX="483.0" layoutY="39.0" mnemonicParsing="false" onAction="#clickManejadorEventos" prefHeight="52.0" prefWidth="128.0" styleClass="boton-transparente" />
    </children>
 </AnchorPane>

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="2610.0" prefWidth="1740.0" styleClass="mainFxmlClass" stylesheets="@/org/stepone/sources/catalogoview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.CatalogoController">
+<AnchorPane id="AnchorPane" prefHeight="2610.0" prefWidth="1740.0" styleClass="mainFxmlClass" stylesheets="@../sources/catalogoview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.CatalogoController">
    <children>
       <ImageView fitHeight="1190.0" fitWidth="1740.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
          <image>

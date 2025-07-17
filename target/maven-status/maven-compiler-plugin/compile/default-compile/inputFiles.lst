@@ -1,8 +1,9 @@
-C:\GitMave\stepone\src\main\java\org\stepone\controller\Productos.java
 C:\GitMave\stepone\src\main\java\org\stepone\model\Usuario.java
 C:\GitMave\stepone\src\main\java\org\stepone\controller\IniciarSecionController.java
 C:\GitMave\stepone\src\main\java\org\stepone\controller\InventarioController.java
+C:\GitMave\stepone\src\main\java\org\stepone\controller\ZapatosController.java
 C:\GitMave\stepone\src\main\java\org\stepone\controller\CarritoController.java
+C:\GitMave\stepone\src\main\java\org\stepone\model\Zapatos.java
 C:\GitMave\stepone\src\main\java\org\stepone\db\Conexion.java
 C:\GitMave\stepone\src\main\java\org\stepone\controller\MenuPrincipalController.java
 C:\GitMave\stepone\src\main\java\org\stepone\controller\RegistrarseController.java

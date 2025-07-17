@@ -23,7 +23,7 @@ import org.stepone.controller.MenuPrincipalController;
 public class Main extends Application {
     private Stage escenarioPrincipal;
     private Scene siguienteEscena;
-    private static String URL = "/org/stepone/view/";
+    private static String URL = "/view/";
     
     public static void main(String[] args) {
         launch(args);
@@ -49,6 +49,7 @@ public class Main extends Application {
         interfazDeCambio = cargadorFXML.getController();
         return interfazDeCambio;
     }
+
     
     public void getMenuPrincipal(){
         try {

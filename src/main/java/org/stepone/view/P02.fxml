@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="920.0" stylesheets="@../sources/Productosview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.Productos">
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="920.0" stylesheets="@../sources/Productosview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.CatalogoController">
    <children>
       <ImageView fitHeight="717.0" fitWidth="1013.0" pickOnBounds="true" preserveRatio="true">
          <image>
