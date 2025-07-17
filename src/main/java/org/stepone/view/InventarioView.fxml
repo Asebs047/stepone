@@ -145,6 +145,8 @@
                   </ImageView>
                </graphic>
             </Button>
+            <Button fx:id="btnBuscar1" layoutX="14.0" layoutY="545.0" mnemonicParsing="false" onAction="#btnBuscarPorNombre" prefHeight="31.0" prefWidth="176.0" text="Reportes de Ventas" />
+            <Button fx:id="btnBuscar11" layoutX="14.0" layoutY="593.0" mnemonicParsing="false" onAction="#btnBuscarPorNombre" prefHeight="31.0" prefWidth="176.0" text="Reportes de Inventario" />
          </children>
       </AnchorPane>
    </children>
