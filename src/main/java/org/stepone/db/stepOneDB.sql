@@ -3,23 +3,20 @@ create database DBStepOne;
 use DBStepOne;					
 
 -- TABLAS
-
 create table Zapatos(
 	idZapato int not null auto_increment,
     nombre varchar(100) not null,
-    descripcion text not null,
     marca varchar(50) not null,
     talla decimal(10,2) not null,
     color varchar(32) not null,
     precio decimal(10,2) not null,
-    genero enum('Hombre', 'Mujer', 'Niño', 'Niña', 'Unisex') not null,
-    imagen_url varchar(255) not null,
+    genero enum('Hombre', 'Mujer') not null,
     constraint pk_zapatos primary key(idZapato)
 );
 
 create table Inventario(
 	idZapato int not null,
-    cantidadStok int not null,
+    cantidad int not null,
     constraint pk_inventario primary key(idZapato),
     constraint fk_inventario_zapatos foreign key(idZapato)
 		references Zapatos(idZapato)
@@ -37,13 +34,8 @@ create table IngresoInventario(
 
 create table Usuarios(
 	idUsuario int not null auto_increment,
-    nombre varchar(32) not null,
-    apellido varchar(32) not null,
     correo varchar(64) not null,
     pass varchar(64) not null,
-    tipo enum('admin','user'),
-    nunero int not null,
-    direccion text,
     constraint pk_usuario primary key(idUsuario)
 );
 
@@ -56,12 +48,13 @@ create table Carritos(
 		references Usuarios(idUsuario)
 );
 
+
 create table DetallesCarritos(
 	idDetalle int not null auto_increment,
-    idCarrito int,
-    idZapato int,
+    idCarrito int not null,
+    idZapato int not null,
     cantidad int not null,
-    subTotal decimal(10,2),
+    subTotal decimal(10,2) not null,
     constraint pk_detalle primary key(idDetalle),
     constraint fk_detalle_carritos foreign key(idCarrito)
 		references Carritos(idCarrito),
@@ -69,12 +62,110 @@ create table DetallesCarritos(
 		references Zapatos(idZapato)
 );
 
-create table ConfrmarPedidos(
-	idCarrito int,
+
+
+insert into Zapatos (nombre, marca, talla, color, precio, genero) values
+('Zapatos deportivos Courtside para hombre', 'Nike', 38.5, 'Negro', 340.00, 'Hombre'),
+('Zapatos deportivos Quixstep para hombre', 'Adidas', 40.0, 'Blanco', 425.00, 'Hombre'), 
+('Zapatos casuales Stitch tipo Oxford para hombre', 'Puma', 36.5, 'Rojo', 415.00, 'Hombre'), 
+('Zapatos deportivos Trekker para hombre', 'Reebok', 37.0, 'Azul', 330.00, 'Hombre'), 
+('Zapatos deportivos Concur XP para hombre', 'Vans', 39.0, 'Gris', 425.00, 'Hombre'), 
+('Zapatos deportivos Command para hombre', 'Nike', 41.0, 'Verde', 370.00, 'Hombre'), 
+('Zapatos de vestir Taunton para hombre', 'Adidas', 40.5, 'Negro', 415.00, 'Hombre'), 
+('Sandalias DiamondBlack para hombre', 'Puma', 38.0, 'Blanco', 325.00, 'Hombre'), 
+('Zapatos deportivos Ambrose para hombre', 'Reebok', 36.0, 'Rojo', 460.00, 'Mujer'), 
+('Zapatos deportivos Command para mujer', 'Vans', 42.0, 'Azul', 370.00, 'Mujer'), 
+('Zapatos deportivos Crossspeed para hombre', 'Nike', 37.5, 'Gris', 495.00, 'Hombre'), 
+('Zapatos casuales tipo mocasín para hombre', 'Adidas', 39.5, 'Verde', 415.00, 'Hombre'),
+('Zapatos deportivos para mujer', 'Puma', 38.5, 'Negro', 440.00, 'Mujer'), 
+('Sandalias para hombre', 'Reebok', 40.0, 'Blanco', 235.50, 'Hombre'), 
+('Tenis Dazzle Sport para mujer', 'Vans', 36.0, 'Rojo', 200.00, 'Mujer'), 
+('Zapatos deportivos Command para mujer', 'Nike', 41.5, 'Azul', 370.00, 'Mujer'), 
+('Sandalias Ryan con plataforma tipo cuña para mujer', 'Adidas', 37.0, 'Gris', 280.00, 'Mujer'), 
+('Sandalias Herdon para mujer', 'Puma', 42.0, 'Verde', 130.00, 'Mujer'), 
+('Sandalias Felicia con tacón tipo cuña para mujer', 'Reebok', 39.0, 'Negro', 220.00, 'Mujer'), 
+('Botines Dierks con cordones para mujer', 'Vans', 38.0, 'Blanco', 200.00, 'Mujer'), 
+('Zapatos deportivos Rush para mujer', 'Nike', 36.5, 'Rojo', 230.00, 'Mujer'), 
+('Botines Rylan para mujer', 'Adidas', 40.0, 'Azul', 250.00, 'Mujer'), 
+('Zapatos deportivos Stance para mujer', 'Puma', 37.5, 'Gris', 300.00, 'Mujer'), 
+('Botines Prance para mujer', 'Reebok', 41.0, 'Verde', 300.00, 'Mujer'),
+('Zapatos casuales Rudy tipo mocasín para mujer', 'Vans', 39.5, 'Negro', 300.00, 'Mujer'), 
+('Sandalias planas Zeal para mujer', 'Nike', 38.0, 'Blanco', 325.00, 'Mujer'), 
+('Sandalias Riley con taco tipo cuña para mujer', 'Adidas', 40.5, 'Rojo', 325.00, 'Mujer'), 
+('Sandalias Riley con taco tipo cuña para mujer', 'Puma', 36.5, 'Azul', 325.00, 'Mujer'),
+('Sandalias Abe para hombre', 'Reebok', 42.0, 'Gris', 310.00, 'Mujer'), 
+('Zapatos casuales Naples tipo Oxford para hombre', 'Vans', 37.0, 'Verde', 675.00, 'Hombre'); 
+
+INSERT INTO Inventario (idZapato, cantidad) VALUES
+(1, 20), 
+(2, 15), 
+(3, 30), 
+(4, 10), 
+(5, 25),
+(6, 8), 
+(7, 18), 
+(8, 12), 
+(9, 16), 
+(10, 5),
+(11, 22), 
+(12, 13), 
+(13, 7), 
+(14, 9), 
+(15, 14),
+(16, 6), 
+(17, 11), 
+(18, 17), 
+(19, 23), 
+(20, 4),
+(21, 21), 
+(22, 19), 
+(23, 3), 
+(24, 2), 
+(25, 26),
+(26, 29), 
+(27, 24), 
+(28, 1), 
+(29, 27), 
+(30, 20);
+
+INSERT INTO IngresoInventario (cantIngreso, fechaIngreso, idZapato) VALUES
+(10, '2024-01-01', 1), 
+(15, '2024-01-02', 2), 
+(8, '2024-01-03', 3),
+(12, '2024-01-04', 4), 
+(6, '2024-01-05', 5), 
+(20, '2024-01-06', 6),
+(7, '2024-01-07', 7), 
+(14, '2024-01-08', 8), 
+(9, '2024-01-09', 9),
+(13, '2024-01-10', 10), 
+(11, '2024-01-11', 11), 
+(18, '2024-01-12', 12),
+(5, '2024-01-13', 13), 
+(16, '2024-01-14', 14), 
+(4, '2024-01-15', 15),
+(10, '2024-01-16', 16), 
+(15, '2024-01-17', 17), 
+(8, '2024-01-18', 18),
+(12, '2024-01-19', 19), 
+(6, '2024-01-20', 20), 
+(20, '2024-01-21', 21),
+(7, '2024-01-22', 22), 
+(14, '2024-01-23', 23), 
+(9, '2024-01-24', 24),
+(13, '2024-01-25', 25), 
+(11, '2024-01-26', 26), 
+(18, '2024-01-27', 27),
+(5, '2024-01-28', 28), 
+(16, '2024-01-29', 29), 
+(4, '2024-01-30', 30);
+
+create table ConfirmarPedidos(
+	idCarrito int not null,
+    fechaConfirmacion date not null,
 	constraint pk_confirmar primary key(idCarrito),
     constraint fk_confirmar_carritos foreign key(idCarrito)
-		references Carritos(idCarrito),
-	constraint uq_confirmar_carrito unique (idCarrito)
+		references Carritos(idCarrito)
 );
 
 create table Facturas(
@@ -104,16 +195,14 @@ create table Ventas(
 delimiter //
 create procedure sp_InsertarZapato(
     in p_nombre varchar(100),
-    in p_descripcion text,
     in p_marca varchar(50),
     in p_talla decimal(10,2),
     in p_color varchar(32),
     in p_precio decimal(10,2),
-    in p_genero enum('Hombre', 'Mujer', 'Niño', 'Niña', 'Unisex'),
-    in p_imagen_url varchar(255))
+    in p_genero enum('Hombre', 'Mujer'))
 begin
-    insert into Zapatos(nombre, descripcion, marca, talla, color, precio, genero, imagen_url)
-    values(p_nombre, p_descripcion, p_marca, p_talla, p_color, p_precio, p_genero, p_imagen_url);
+    insert into Zapatos(nombre, marca, talla, color, precio, genero)
+    values(p_nombre, p_marca, p_talla, p_color, p_precio, p_genero);
 end //
 delimiter ;
 
@@ -121,23 +210,19 @@ delimiter //
 create procedure sp_ActualizarZapato(
     in p_id int,
     in p_nombre varchar(100),
-    in p_descripcion text,
     in p_marca varchar(50),
     in p_talla decimal(10,2),
     in p_color varchar(32),
     in p_precio decimal(10,2),
-    in p_genero enum('Hombre', 'Mujer', 'Niño', 'Niña', 'Unisex'),
-    in p_imagen_url varchar(255))
+    in p_genero enum('Hombre', 'Mujer'))
 begin
     update Zapatos
     set nombre = p_nombre,
-        descripcion = p_descripcion,
         marca = p_marca,
         talla = p_talla,
         color = p_color,
         precio = p_precio,
-        genero = p_genero,
-        imagen_url = p_imagen_url
+        genero = p_genero
     where idZapato = p_id;
 end //
 delimiter ;
@@ -153,20 +238,20 @@ delimiter ;
 delimiter //
 create procedure sp_InsertarInventario(
     in p_idZapato int,
-    in p_cantidadStok int)
+    in p_cantidad int)
 begin
-    insert into Inventario(idZapato, cantidadStok)
-    values(p_idZapato, p_cantidadStok);
+    insert into Inventario(idZapato, cantidad)
+    values(p_idZapato, p_cantidad);
 end //
 delimiter ;
 
 delimiter //
 create procedure sp_ActualizarInventario(
     in p_idZapato int,
-    in p_cantidadStok int)
+    in p_cantidad int)
 begin
     update Inventario
-    set cantidadStok = p_cantidadStok
+    set cantidad = p_cantidad
     where idZapato = p_idZapato;
 end //
 delimiter ;
@@ -215,16 +300,11 @@ delimiter ;
 -- Usuarios
 delimiter //
 create procedure sp_InsertarUsuario(
-    in p_nombre varchar(32),
-    in p_apellido varchar(32),
     in p_correo varchar(64),
-    in p_pass varchar(64),
-    in p_tipo enum('admin','user'),
-    in p_nunero int,
-    in p_direccion text)
+    in p_pass varchar(64))
 begin
-    insert into Usuarios(nombre, apellido, correo, pass, tipo, nunero, direccion)
-    values(p_nombre, p_apellido, p_correo, p_pass, p_tipo, p_nunero, p_direccion);
+    insert into Usuarios(correo, pass)
+    values(p_correo, p_pass);
 end //
 delimiter ;
 
@@ -398,10 +478,10 @@ for each row
 begin
     if exists (select 1 from Inventario where idZapato = NEW.idZapato) then
         update Inventario
-        set cantidadStok = cantidadStok + NEW.cantIngreso
+        set cantidad = cantidad + NEW.cantIngreso
         where idZapato = NEW.idZapato;
     else
-        insert into Inventario(idZapato, cantidadStok)
+        insert into Inventario(idZapato, cantidad)
         values (NEW.idZapato, NEW.cantIngreso);
     end if;
 end //
@@ -511,14 +591,13 @@ begin
         select idZapato, cantidad
         from DetallesCarritos
         where idCarrito = p_idCarrito;
-    
-    declare continue handler for not found set done = 1;
 
+    declare continue handler for not found set done = 1;
+    
     -- Validar si pedido ya fue confirmado
     if exists (select 1 from ConfrmarPedidos where idCarrito = p_idCarrito) then
         signal sqlstate '45000' set message_text = 'Error: Pedido ya confirmado.';
     end if;
-
     open cur;
 
     -- Validar stock disponible
@@ -527,45 +606,35 @@ begin
         if done then
             leave loop_fetch;
         end if;
-
-        select cantidadStok into v_stock from Inventario where idZapato = v_idZapato;
-
+        select cantidad into v_stock from Inventario where idZapato = v_idZapato;
         if v_stock < v_cantidad then
             set v_mensaje = concat('Error: Stock insuficiente para zapato ID ', v_idZapato, '. Stock actual: ', v_stock, ', requerido: ', v_cantidad);
             signal sqlstate '45000' set message_text = v_mensaje;
         end if;
     end loop;
-
     close cur;
-
+    
     -- Insertar confirmación de pedido
     insert into ConfrmarPedidos(idCarrito) values(p_idCarrito);
-
+    
     -- Reducir stock
     set done = 0;
     open cur;
-
     loop_fetch2: loop
         fetch cur into v_idZapato, v_cantidad;
         if done then
             leave loop_fetch2;
         end if;
-
         update Inventario
-        set cantidadStok = cantidadStok - v_cantidad
+        set cantidad = cantidad - v_cantidad
         where idZapato = v_idZapato;
     end loop;
-
     close cur;
-
+    
     -- Crear factura y venta
-
     select idUsuario into v_idUsuario from Carritos where idCarrito = p_idCarrito;
-
     insert into Facturas(idUsuario, idCarrito, fecha) values(v_idUsuario, p_idCarrito, CURDATE());
     set v_idFactura = last_insert_id();
-
     insert into Ventas(idFactura) values(v_idFactura);
-
 end //
 delimiter ;
