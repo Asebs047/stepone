@@ -1,3 +1,4 @@
+
 package org.stepone.controller;
 
 import java.net.URL;
@@ -12,7 +13,7 @@ import org.stepone.system.Main;
  *
  * @author reyes
  */
-public class MenuAdministracionController implements Initializable{
+public class VentasController implements Initializable {
     private Main principal;
     
     public void setPrincipal(Main principal) {
@@ -20,7 +21,8 @@ public class MenuAdministracionController implements Initializable{
     }
     
     @FXML
-    private Button btnInventario, btnVentas;
+    private Button btnRegresar;
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -29,10 +31,9 @@ public class MenuAdministracionController implements Initializable{
     
     @FXML
     public void clickManejadorEventos(ActionEvent e){
-        if (e.getSource()== btnInventario) {
-            principal.getInventarioView();
-        } else if (e.getSource()== btnVentas){
-            principal.getVentasView();
+        if (e.getSource()== btnRegresar) {
+            principal.getMenuAdminView();
+            
         }
     }
     
