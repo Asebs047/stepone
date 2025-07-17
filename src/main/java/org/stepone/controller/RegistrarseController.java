@@ -60,10 +60,10 @@ public class RegistrarseController implements Initializable {
     }
 
     private Usuario getModeloUsuario (){
-        String correo = TxtUsuario.getText();
-        String pass = PassContraseña.getText();
+        String nombre = TxtUsuario.getText();
+        String contra = PassContraseña.getText();
 
-        return new Usuario (correo,pass);
+        return new Usuario (nombre,contra);
     }
 
     public void agregarUsuario(){
@@ -71,7 +71,7 @@ public class RegistrarseController implements Initializable {
         validarNuevoUsuario();
 
         try {
-            CallableStatement enunciado = Conexion.getInstancia().getConexion().prepareCall("{call sp_InsertarUsuario(?,?)}");
+            CallableStatement enunciado = Conexion.getInstancia().getConexion().prepareCall("{call sp_AgregarUsuarios(?,?)}");
             enunciado.setString(1, modeloUsuario.getNombreUsuario());
             enunciado.setString(2, modeloUsuario.getContraseñaUsuario());
             enunciado.execute();
