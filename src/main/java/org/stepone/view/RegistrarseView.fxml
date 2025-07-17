@@ -14,8 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="529.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.stepone.controller.RegistrarseController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.RegistrarseController">
    <children>
       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="529.0">
          <left>
@@ -76,13 +75,13 @@
                      </font>
                   </Label>
                   <TextField fx:id="TxtUsuario" layoutX="119.0" layoutY="114.0" promptText="Usuario" style="-fx-background-color: #dadee3;" stylesheets="@../../../../../../../../Users/Klopez/OneDrive/Documentos/ExpoKinal/ProyectoPokedexFinal/src/org/expopokedex/resource/Nuevo_Usuario_Style.css" />
-                  <Button fx:id="BtnCrear" alignment="CENTER" layoutX="23.0" layoutY="227.0" mnemonicParsing="false" onAction="#agregarUsuario" prefHeight="42.0" prefWidth="243.0" stylesheets="@../../../../../../../../Users/Klopez/OneDrive/Documentos/ExpoKinal/ProyectoPokedexFinal/src/org/expopokedex/resource/Nuevo_Usuario_Style.css" text="Crear Usuario" textFill="WHITE">
+                  <Button fx:id="BtnCrear" alignment="CENTER" layoutX="23.0" layoutY="227.0" mnemonicParsing="false" onAction="#agregarUsuario" prefHeight="42.0" prefWidth="243.0" style="-fx-background-color: grey;" text="Crear Usuario" textFill="WHITE">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
                   <PasswordField fx:id="PassContraseña" layoutX="120.0" layoutY="168.0" promptText="Contraseña" style="-fx-background-color: #dadee3;" stylesheets="@../../../../../../../../Users/Klopez/OneDrive/Documentos/ExpoKinal/ProyectoPokedexFinal/src/org/expopokedex/resource/Nuevo_Usuario_Style.css" />
-                  <Button fx:id="BtnVolver" alignment="CENTER" layoutX="23.0" layoutY="287.0" mnemonicParsing="false" onAction="#VolverOnActionEvent" prefHeight="46.0" prefWidth="243.0" stylesheets="@../../../../../../../../Users/Klopez/OneDrive/Documentos/ExpoKinal/ProyectoPokedexFinal/src/org/expopokedex/resource/Nuevo_Usuario_Style.css" text="Volver a Login" textFill="WHITE">
+                  <Button fx:id="BtnVolver" alignment="CENTER" layoutX="23.0" layoutY="287.0" mnemonicParsing="false" onAction="#VolverOnActionEvent" prefHeight="46.0" prefWidth="243.0" style="-fx-background-color: grey;" text="Volver a Login" textFill="WHITE">
                      <font>
                         <Font size="24.0" />
                      </font>
