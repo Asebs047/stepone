@@ -11,6 +11,7 @@ import org.stepone.controller.CatalogoController;
 import org.stepone.controller.RegistrarseController;
 
 import org.stepone.controller.IniciarSecionController;
+import org.stepone.controller.MenuAdministracionController;
 import org.stepone.controller.MenuPrincipalController;
 
 /*
@@ -86,8 +87,19 @@ public class Main extends Application {
                     (RegistrarseController) cambiarEscena("RegistrarseView.fxml",520,400);
             control.setPrincipal(this);
         } catch (Exception ex) {
-            System.out.println("Error al ir a Inicio"+ex.getMessage());
+            System.out.println("Error al ir a Inicio: "+ex.getMessage());
             ex.printStackTrace();
+        }
+    }
+    
+    public void getMenuAdminView(){
+        try {
+            MenuAdministracionController control =
+                    (MenuAdministracionController) cambiarEscena("MenuAdminView.fxml", 870, 500);
+            control.setPrincipal(this);
+        } catch (Exception e) {
+            System.out.println("Error al ir a el menu de administrador: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
