@@ -32,7 +32,7 @@ create table IngresoInventario(
 		references Inventario(idZapato)
 );
 
---entidad para login
+-- entidad para login
 create table Usuarios(
 	idUsuario int not null auto_increment,
     correo varchar(64) not null,
@@ -639,3 +639,45 @@ begin
     insert into Ventas(idFactura) values(v_idFactura);
 end //
 delimiter ;
+
+-- Usuarios
+insert into Usuarios (correo, pass) values
+('juan@gmail.com', '1234'),
+('maria@gmail.com', 'abcd'),
+('carlos@gmail.com', 'pass'),
+('ana@gmail.com', 'clave'),
+('lucas@gmail.com', 'admin');
+
+-- Carritos
+insert into Carritos (idUsuario, total) values
+(1, 1000.00),
+(2, 350.00),
+(3, 700.00),
+(4, 600.00),
+(5, 560.00);
+
+-- DetallesCarritos
+insert into DetallesCarritos (idCarrito, idZapato, cantidad, subTotal) values
+(1, 1, 2, 1000.00),
+(2, 2, 1, 350.00),
+(3, 3, 2, 840.00),
+(4, 4, 2, 600.00),
+(5, 5, 2, 560.00);
+
+-- Facturas
+insert into Facturas (idUsuario, idCarrito, fecha) values
+(1, 1, '2025-07-01'),
+(2, 2, '2025-07-02'),
+(3, 3, '2025-07-03'),
+(4, 4, '2025-07-04'),
+(5, 5, '2025-07-05');
+
+-- Ventas
+INSERT INTO Ventas (idFactura) VALUES
+(1),
+(2),
+(3),
+(4),
+(5);
+
+
