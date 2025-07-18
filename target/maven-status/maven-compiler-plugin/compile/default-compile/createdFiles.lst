@@ -3,8 +3,14 @@ org\stepone\controller\IniciarSecionController.class
 org\stepone\db\Conexion.class
 org\stepone\controller\CatalogoController.class
 org\stepone\controller\MenuPrincipalController.class
+org\stepone\controller\MenuAdministracionController.class
 org\stepone\controller\Productos.class
 org\stepone\controller\RegistrarseController.class
+<<<<<<< HEAD
+org\stepone\controller\VentasController.class
+org\stepone\model\Inventario.class
+=======
+>>>>>>> e26f9b2c793a5e9f7948b9c90fa088a53ba68f12
 org\stepone\controller\CarritoController.class
 org\stepone\controller\InventarioController.class
 org\stepone\model\Usuario.class

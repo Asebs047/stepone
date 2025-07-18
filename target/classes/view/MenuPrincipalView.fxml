@@ -23,6 +23,14 @@
          </image>
       </ImageView>
       <Button fx:id="btnLogin" layoutX="258.0" layoutY="39.0" mnemonicParsing="false" onAction="#clickManejadorEventos" prefHeight="52.0" prefWidth="217.0" styleClass="boton-transparente" />
+<<<<<<< HEAD
+<<<<<<<< HEAD:target/classes/view/MenuPrincipalView.fxml
+      <Button fx:id="btnCatalogo" layoutX="483.0" layoutY="39.0" mnemonicParsing="false" onAction="#clickManejadorEventos" prefHeight="52.0" prefWidth="128.0" styleClass="boton-transparente" />
+========
       <Button layoutX="483.0" layoutY="39.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="128.0" styleClass="boton-transparente" />
+>>>>>>>> e26f9b2c793a5e9f7948b9c90fa088a53ba68f12:src/main/resources/view/MenuPrincipalView.fxml
+=======
+      <Button layoutX="483.0" layoutY="39.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="128.0" styleClass="boton-transparente" />
+>>>>>>> e26f9b2c793a5e9f7948b9c90fa088a53ba68f12
    </children>
 </AnchorPane>

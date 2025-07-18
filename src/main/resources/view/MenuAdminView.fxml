@@ -5,7 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../sources/menuprincipalview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../sources/menuprincipalview.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.MenuAdministracionController">
    <children>
       <ImageView fitHeight="584.0" fitWidth="870.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -22,7 +22,7 @@
             <Image url="@../image/MenuAdmin.png" />
          </image>
       </ImageView>
-      <Button layoutX="458.0" layoutY="31.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="121.0" styleClass="boton-transparente" />
-      <Button layoutX="248.0" layoutY="35.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="189.0" styleClass="boton-transparente" />
+      <Button fx:id="btnVentas" layoutX="458.0" layoutY="31.0" mnemonicParsing="false" onAction="#clickManejadorEventos" prefHeight="60.0" prefWidth="121.0" styleClass="boton-transparente" />
+      <Button fx:id="btnInventario" layoutX="248.0" layoutY="35.0" mnemonicParsing="false" onAction="#clickManejadorEventos" prefHeight="60.0" prefWidth="189.0" styleClass="boton-transparente" />
    </children>
 </AnchorPane>
