@@ -32,6 +32,7 @@ create table IngresoInventario(
 		references Inventario(idZapato)
 );
 
+--entidad para login
 create table Usuarios(
 	idUsuario int not null auto_increment,
     correo varchar(64) not null,
