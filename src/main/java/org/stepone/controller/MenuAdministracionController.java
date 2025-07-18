@@ -26,7 +26,7 @@ public class MenuAdministracionController implements Initializable{
     }
     
     @FXML
-    private Button btnReporte;
+    private Button btnReporte, btnReporteVenta;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -52,6 +52,15 @@ public class MenuAdministracionController implements Initializable{
                 "/reports/Inventario.jasper"));
         Report.mostrarReporte();
     }
+    
+    public void imprimirReporteVentas(){
+        Connection conexion = Conexion.getInstancia().getConexion();
+        parametros = new HashMap<String, Object>();
+        Report.generarReporte(conexion, parametros, cargarReporte(
+                "/reports/Ventas.jasper"));
+        Report.mostrarReporte();
+    }
+    
 
     
 }

@@ -32,12 +32,14 @@ CREATE TABLE IngresoInventario(
     CONSTRAINT fk_ingreso_inventario FOREIGN KEY(idZapato) REFERENCES Inventario(idZapato)
 );
 
-CREATE TABLE Usuarios(
-    idUsuario INT NOT NULL AUTO_INCREMENT,
-    correo VARCHAR(64) NOT NULL,
-    pass VARCHAR(64) NOT NULL,
-    CONSTRAINT pk_usuario PRIMARY KEY(idUsuario)
-);
+
+-- entidad para login
+create table Usuarios(
+	idUsuario int not null auto_increment,
+    correo varchar(64) not null,
+    pass varchar(64) not null,
+    constraint pk_usuario primary key(idUsuario)
+
 
 CREATE TABLE Carritos(
     idCarrito INT NOT NULL AUTO_INCREMENT,
@@ -372,3 +374,15 @@ SELECT * FROM DetallesCarritos WHERE idCarrito = 1;
 SELECT idZapato, cantidad FROM Inventario WHERE idZapato IN (
   SELECT idZapato FROM DetallesCarritos WHERE idCarrito = 1
 );
+
+-- Facturas
+insert into Facturas (idUsuario, idCarrito, fecha) values
+(1, 1, '2025-07-01'),
+(2, 2, '2025-07-02'),
+(3, 3, '2025-07-03');
+
+-- Ventas
+INSERT INTO Ventas (idFactura) VALUES
+(1),
+(2),
+(3);

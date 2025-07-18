@@ -22,7 +22,7 @@
             <Image url="@../image/MenuAdmin.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnVentas" layoutX="458.0" layoutY="31.0" mnemonicParsing="false"  prefHeight="60.0" prefWidth="121.0" styleClass="boton-transparente" />
+      <Button fx:id="btnReporteVenta" layoutX="458.0" layoutY="31.0" mnemonicParsing="false" onAction="#imprimirReporteVentas" prefHeight="60.0" prefWidth="121.0" styleClass="boton-transparente" />
       <Button fx:id="btnReporte" layoutX="248.0" layoutY="35.0" mnemonicParsing="false" onAction="#imprimirReporte" prefHeight="60.0" prefWidth="189.0" styleClass="boton-transparente" />
    </children>
 </AnchorPane>
