@@ -366,7 +366,7 @@ begin
 end //
 delimiter ;
 
--- DetallesCarritos
+-- DetallesCarritos:
 delimiter //
 create procedure sp_InsertarDetalleCarrito(
     in p_idCarrito int,
