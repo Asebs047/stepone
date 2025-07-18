@@ -17,7 +17,15 @@
 
 <AnchorPane id="AnchorPane" prefHeight="388.0" prefWidth="520.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stepone.controller.IniciarSecionController">
     <stylesheets>
+<<<<<<< HEAD
+<<<<<<<< HEAD:target/classes/view/IniciarSecionView.fxml
         <URL value="@../sources/iniciarsecionview.css" />
+========
+        <URL value="@../sources/iniciarsecionview.css"/>
+>>>>>>>> e26f9b2c793a5e9f7948b9c90fa088a53ba68f12:src/main/resources/view/IniciarSecionView.fxml
+=======
+        <URL value="@../sources/iniciarsecionview.css"/>
+>>>>>>> e26f9b2c793a5e9f7948b9c90fa088a53ba68f12
     </stylesheets>
    <children>
       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0">
